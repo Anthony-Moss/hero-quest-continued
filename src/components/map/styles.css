@@ -1,0 +1,344 @@
+
+.tile {
+    display: inline-flex;
+    background-color: rgb(29, 29, 29);
+}
+
+.bigDoor {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/enter_dis.png');
+    background-position: -64px -32px
+}
+
+.door {
+    background-image: url('../../styles/HeroSprites/Characters/Objects.png');
+    background-position: -128px 0px
+}
+
+.chest {
+    background-image: url('../../styles/HeroSprites/Characters/Objects.png');
+    background-position: left top;
+}
+
+.stoneEntrance {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/cobble_blood_1_old.png');
+    background-position: 0px 0px
+}
+
+.townExit {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/gate_closed_middle.png');
+}
+
+.road {
+    background-image: url('')
+}
+
+.townWall {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/stone_brick_1.png')
+}
+
+.fountain {
+    background-image: url('../../styles/fountain.gif');
+    background-color: rgb(2, 71, 2);
+}
+
+
+.tree {
+    background-image: url('../../styles/Dungeon_Crawl_images/mangrove_3.png');
+    background-position: -96px -32px
+}
+
+
+.grassEdgeLeft {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_west_new.png');
+    background-position: 0px 0px
+}
+
+.grassEdgeRight {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_east_new.png');
+    background-position: 0px 0px
+}
+
+.grassMiddle {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_full_new.png');
+    background-position: 0px 0px
+}
+
+.grassBottom {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_south_new.png');
+    background-position: 0px 0px
+}
+
+.grassBottomLeft {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_southwest_new.png');
+    background-position: 0px 0px
+}
+
+.grassBottomRight {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_southeast_new.png');
+    background-position: 0px 0px
+}
+
+.grassTop {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_north_new.png');
+    background-position: 0px 0px
+}
+
+.grassTopRight {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_northeast_new.png');
+    background-position: 0px 0px
+}
+
+.grassTopLeft {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_northwest_new.png');
+    background-position: 0px 0px
+}
+
+.plainTree {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-tree/mangrove_1.png');
+    background-position: 0px 0px;
+    background-color: rgb(2, 71, 2);
+}
+
+.water {
+    background-image: url('../../styles/water.gif');
+    background-position: 0px 0px
+}
+
+.blueFlowerGrass1 {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_flowers_blue_1_new.png');
+    background-position: 0px 0px
+}
+
+.blueFlowerGrass2 {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_flowers_blue_2_new.png');
+    background-position: 0px 0px
+}
+
+.yellowFlowerGrass1 {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_flowers_yellow_1_new.png');
+    background-position: 0px 0px
+}
+
+.yellowFlowerGrass2 {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_flowers_yellow_2_new.png');
+    background-position: 0px 0px
+}
+
+.lavaFloor {
+    background-image: url('../../styles/lava-floor.gif');
+}
+
+.caveFloor {
+    background-image: url('../../styles/Dungeon_Crawl_images/cave/snake-c_0.png');
+}
+
+.caveWall {
+    background-image: url('../../styles/Dungeon_Crawl_images/cave/brick_brown-vines_1.png');
+}
+
+
+
+
+
+/* to get a middle sprite for grass from sprite sheet
+just calculate the x and y px that would grab that from sheet
+you dont have to just move in 32s pick any numbers that view ~middle of the 4 grass boxs */
+.moreGrass5 {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass_0_new.png');
+    background-position: -96px 0px
+}
+
+.battleTrigger {
+    background-image: url('../../styles/HeroSprites/Characters/Objects.png');
+    background-position: 0px -1px;
+}
+
+.battleTile {
+    display: inline-flex;
+    background-color: transparent;
+}
+
+.townTileLeft {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/gate_closed_left.png');
+}
+.townTile {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/gate_closed_middle.png');
+}
+.townTileRight {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/gate_closed_right.png');
+}
+
+.healer {
+    background-image: url('../../styles/Dungeon_Crawl_images/sparkling_fountain.png')
+}
+
+.dungeonFloor {
+    background-image: url('../../styles/Dungeon_Crawl_images/rect_gray_0_old.png')
+}
+
+.dungeonWall {
+    background-image: url('../../styles/Dungeon_Crawl_images/marble_wall_1.png')
+}
+
+.dungeonFountain {
+    background-image: url('../../styles/Dungeon_Crawl_images/blood_fountain.png')
+}
+
+.flame {
+    background-image: url('../../styles/fire.gif');
+    background-color: rgb(54, 54, 54);
+}
+
+.itemStore {
+    background-image: url('../../styles/elf_new.png');
+    background-position: left top;
+    background-color: rgb(186, 178, 136);
+}
+
+.caveEntrance {
+    background-image: url('../../styles/Dungeon_Crawl_images/volcano_exit.png');
+    background-color: rgb(2, 71, 2);
+}
+
+.caveBossFight {
+    background-image: url('../../styles/Dungeon_Crawl_images/tomb_1.png');
+    background-position: left top;
+}
+
+.caveLairEntrance {
+    background-image: url('../../styles/Dungeon_Crawl_images/cave/rock_stairs_down.png');
+    background-position: left top;
+}
+
+.dungeonEntranceWall {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/catacombs_0.png');
+    background-position: 0px 0px;
+}
+.battleImpassable {
+    display: inline-flex;
+    background-color: transparent;
+}
+
+.lavaStairs {
+    background-image: url('../../styles/Dungeon_Crawl_images/cave/rock_stairs_up.png');
+    background-color: rgba(60, 10, 13, 0.639);
+}
+
+.lavaBridge {
+    background-image: url('../../styles/Dungeon_Crawl_images/cave/volcanic_floor_0.png')
+}
+
+.lavaBridge2 {
+    background-image: url('../../styles/Dungeon_Crawl_images/cave/rough_red_0.png')
+}
+
+.lavaFlame {
+    background-image: url('../../styles/fire.gif');
+    background-color: rgba(60, 10, 13, 0.639);
+}
+
+.townExitLeft {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/gate_closed_left.png');
+}
+
+.townExitRight {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/gate_closed_right.png');
+}
+
+.townFloor {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/floor_vines_0_new.png')
+}
+
+.townGrassTopLeftCorner {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass-top-left-edge.png')
+}
+
+.townGrassTopRightCorner {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass-top-right-edge.png')
+}
+
+.townGrassBottomLeftCorner {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass-bottom-left-edge.png')
+}
+
+.townGrassBottomRightCorner {
+    background-image: url('../../styles/Dungeon_Crawl_images/plains-grass/grass-bottom-right-edge.png')
+}
+
+.churchWall {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/church_0.png');
+}
+
+.churchFloor {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/ice_0_old.png');
+}
+
+.churchDoor {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/runed_door.png')
+}
+
+.churchHealer {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/killer_klown_green.png');
+    background-color: rgb(191, 188, 188);
+}
+
+.churchRevive {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/churchrevive.gif');
+    background-color: rgb(191, 188, 188);
+}
+
+.storeChest {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/store-chest.gif');
+    background-color: rgb(186, 178, 136);
+}
+
+.storeWall {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/stone_2_brown_0.png');
+}
+
+.storeFloor {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/floor_sand_stone_0.png');
+}
+
+.storeDoor {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/closed_door.png');
+}
+
+.storeSign {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/shop_gadgets.png');
+    background-color: rgb(84, 58, 5)
+}
+
+.townSign {
+    background-image: url('../../styles/Dungeon_Crawl_images/town/town-sign.gif');
+    background-color: rgb(2, 71, 2);
+}
+
+.dungeonBoss1Tiles {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/abyss_cyan_0.png');
+}
+
+.dun1ToDun2Path {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/enter_abyss.png');
+
+}
+.dun2ToDun1Path {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/enter_abyss.png');
+}
+
+.dungeonBoss2Tiles {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/abyss_lightblue_7.png');
+
+}
+
+.dun2ToCavePath {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/enter_tartarus.png');
+}
+
+.caveToDun2Path {
+    background-image: url('../../styles/Dungeon_Crawl_images/dungeon/enter_tartarus.png');
+}
+
+.caveToWilderness {
+    background-image: url('../../styles/Dungeon_Crawl_images/volcano_exit.png');
+}
