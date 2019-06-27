@@ -12,6 +12,10 @@ const gameMenuReducer = (state=initialState, action) => {
             return {
                 menuDisplay: action.payload.menuDisplay
             }
+        case 'USER_WANTS_CREATE_ACCOUNT_PAGE':
+            return {
+                menuDisplay: action.payload.menuDisplay
+            }
         default:
             return state;
         }

@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 import qs from 'qs'
 import gameMenuBackground from '../../styles/backgroundImages/AH-Space copy.png'
 import './gameMenu.css'
@@ -7,18 +7,20 @@ import './gameMenu.css'
 class CreateUserPage extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {};
+
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    async componentDidMount() {
-        response = axios.get("http://localhost4000/api");
-        this.setState({
-            character: response.data
-        }, () => {
-            console.log('done setting the state');
-        });
-    }
+    // async componentDidMount() {
+    //     response = Axios.get("http://localhost4000/api");
+    //     this.setState({
+    //         character: response.data
+    //     }, () => {
+    //         console.log('done setting the state');
+    //     });
+    // }
 
     render() {
         return (

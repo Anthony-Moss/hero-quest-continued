@@ -4,7 +4,7 @@ const initialState = {
 
 const createUserPageReducer = (state=initialState, action) => {
     switch(action.type) {
-        case 'LOAD_CREATE_USER_PAGE':
+        case 'USER_WANTS_CREATE_ACCOUNT_PAGE':
             return {
                 createUserPageDisplay: action.payload.createUserPageDisplay
             }

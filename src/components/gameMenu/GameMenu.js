@@ -25,7 +25,7 @@ class GameMenu extends React.Component {
                 <div className='GameMenuButtons'>
                     <button onClick={this.newGame}>New Game</button>
                     <button onClick={this.loginPage}>User Login</button>
-                    <button onClick={this.createUserPage}></button>
+                    <button onClick={this.createUserPage}>Create Account</button>
                 </div>
             </div>
         )
