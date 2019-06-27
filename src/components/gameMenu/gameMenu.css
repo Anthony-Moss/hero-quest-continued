@@ -3,6 +3,11 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 16px;
+    color: white;
+}
+
 .TitleText {
     margin-top: 130px;
     height: 100px;

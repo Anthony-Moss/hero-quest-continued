@@ -2,7 +2,7 @@ import React from 'react';
 import Axios from 'axios';
 import qs from 'qs'
 import gameMenuBackground from '../../styles/backgroundImages/AH-Space copy.png'
-import './gameMenu.css'
+import './createUserPage.css'
 
 class CreateUserPage extends React.Component {
     constructor(props) {
@@ -26,17 +26,18 @@ class CreateUserPage extends React.Component {
         return (
             <div className='CreateUserPage' style={{
                     display: this.props.createUserPageDisplay, 
+                    flexDirection: "column",
                     position: 'relative',
                     backgroundImage: `url('${gameMenuBackground}')`,
                     width: '640px',
                     height: '640px',
                     margin: '20px auto'}}>
-                <div className='TitleText'>
+                <div className='TitleTextCU'>
                     <h1>Hero Quest</h1>
                     <h2>Please enter the information below to create an account and play now!</h2>
                     <h2>Already have an account? Click the Login button to Log in with your account information</h2>
                 </div>
-                <div>
+                <div className='createUserForm'>
                     <form onSubmit={this.createNewUser}>
                         <label>
                             Email:

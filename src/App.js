@@ -2,7 +2,7 @@ import React from 'react';
 import World from './containers/WorldContainer';
 import GameMenu from './containers/GameMenuContainer';
 import LoginPage from './containers/LoginPageContainer';
-import CreateUserPage from './components/gameMenu/CreateUserPage';
+import CreateUserPage from './containers/CreateUserPageContainer';
 
 
 function App() {
