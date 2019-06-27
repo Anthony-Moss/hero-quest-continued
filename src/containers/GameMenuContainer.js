@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch) => {
         startNewGame: () => {
             dispatch({ type: 'START_NEW_GAME', payload: {
                 listenForKeys: true,
-                gameWorldDisplay: 'flex',
+                gameWorldDisplay: 'block',
                 menuDisplay: 'none',
                 loginPageDisplay: 'none'
             }});

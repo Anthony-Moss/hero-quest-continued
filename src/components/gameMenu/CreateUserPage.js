@@ -63,8 +63,8 @@ class CreateUserPage extends React.Component {
             alert('A name was submitted: ' + this.state);
             event.preventDefault();
             const response = await Axios({
-                method: 'get',
-                url: '/check',
+                method: 'post',
+                url: '/createUser',
                 data: qs.stringify(this.state),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'

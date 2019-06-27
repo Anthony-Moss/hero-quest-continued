@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <GameMenu />
-      <LoginPage />
+      {/* <LoginPage /> */}
       <World />
     </div>
   );
