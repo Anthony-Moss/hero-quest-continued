@@ -35,7 +35,7 @@ class CreateUserPage extends React.Component {
                 <div className='TitleTextCU'>
                     <h1>Hero Quest</h1>
                     <h2>Please enter the information below to create an account and play now!</h2>
-                    <h2>Already have an account? Click the Login button to Log in with your account information</h2>
+                    <h2>Already have an account? Click the User Login button to Log in with your account information.</h2>
                 </div>
                 <div className='createUserForm'>
                     <form onSubmit={this.createNewUser}>
@@ -54,8 +54,8 @@ class CreateUserPage extends React.Component {
                 <div className='CreateUserPageButtons'>
                     {/* this will take the input fields info and test login, if successful goes to main gameMenu to load or start new */}
                     {/* <button onClick={this.createNewUser}>Create Account</button> */}
-                    <button onClick={this.toLoginPage}>Login</button>
-                    <button onClick={this.toGameMenu}>Back To Start Menu</button>
+                    <button onClick={this.toGameMenu}>Main Menu</button>
+                    <button onClick={this.toLoginPage}>User Login</button>
                 </div>
             </div>
         )
