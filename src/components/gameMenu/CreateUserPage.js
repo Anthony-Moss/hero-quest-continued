@@ -50,12 +50,12 @@ class CreateUserPage extends React.Component {
                             <input type="submit" value="Create Account" />
                     </form>
                 </div>
-                {/* <div className='CreateUserPageButtons'> */}
+                <div className='CreateUserPageButtons'>
                     {/* this will take the input fields info and test login, if successful goes to main gameMenu to load or start new */}
                     {/* <button onClick={this.createNewUser}>Create Account</button> */}
-                    {/* <button onClick={this.toLoginPage}>Login</button> */}
-                    {/* <button onClick={this.toGameMenu}>Back To Start Menu</button> */}
-                {/* </div> */}
+                    <button onClick={this.toLoginPage}>Login</button>
+                    <button onClick={this.toGameMenu}>Back To Start Menu</button>
+                </div>
             </div>
         )
     }
@@ -84,13 +84,13 @@ class CreateUserPage extends React.Component {
     // this will send user to the login page
     // this will turn off the createUserPageDisplay and turn on the loginPageDisplay
     toLoginPage = () => {
-
+        this.loadLoginPage()
     }
     // this will just go back to gameMenu main page
     // this will turn off this createUserPage display and
     // turn on gameMenuDisplay
     toGameMenu = () => {
-
+        this.props.loadGameMenuFromCreate()
     }
 
     // sendState = async () => {

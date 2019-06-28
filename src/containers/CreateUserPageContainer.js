@@ -11,10 +11,16 @@ const mapDispatchToProps = (dispatch) => {
     return {
         // this needs to take the inputs from the field and then pass them via the payload as info to log the user in
         // also this will eventually work to turn the createUserPage off and then the gameMenuDisplay on
-        createNewUser: () => {
-            dispatch({ type: 'NEW_USER_LOG_IN', payload: {
-                // menuDisplay: 'flex',
-                // createUserPageDisplay: 'none'
+        // createNewUser: () => {
+        //     dispatch({ type: 'NEW_USER_LOG_IN', payload: {
+        //         // menuDisplay: 'flex',
+        //         // createUserPageDisplay: 'none'
+        //     }})
+        // },
+        loadGameMenuFromCreate: () => {
+            dispatch({ type: 'USER_TO_MENU_FROM_CREATE', payload: {
+                menuDisplay: 'flex',
+                createUserPageDisplay: 'none'
             }})
         }
     }

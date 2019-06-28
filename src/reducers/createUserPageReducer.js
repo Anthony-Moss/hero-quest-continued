@@ -8,6 +8,10 @@ const createUserPageReducer = (state=initialState, action) => {
             return {
                 createUserPageDisplay: action.payload.createUserPageDisplay
             }
+        case 'USER_TO_MENU_FROM_CREATE':
+            return {
+                createUserPageDisplay: action.payload.createUserPageDisplay
+            }
         default:
             return state;
         }
