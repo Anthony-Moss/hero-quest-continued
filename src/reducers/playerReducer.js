@@ -180,6 +180,27 @@ const playerReducer = (state=initialState, action) => {
                 ...state,
                 ...action.payload
             }
+        case "START_NEW_GAME":
+            return {
+                position: [288,320],
+                spriteLocation: 'center top',
+                direction: 'SOUTH',
+                walkIndex: 0,
+                inBattle: 'none',
+                inBattleCaveBoss: 'none',
+                inBattleDungeonBoss: 'none',
+                inBattleDungeonBossTwo: 'none',
+                inStore: 'none',
+                isListening: true,
+                basePlayerHP: 100,
+                addedHP: 0,
+                maxPlayerHP: 100,
+                playerAttack: 25,
+                playerLevel: 1,
+                playerExp: 0,
+                gold: 10,
+                inventory: []
+            }
         default:
             return state
     }
