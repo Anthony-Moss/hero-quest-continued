@@ -16,6 +16,14 @@ const loginPageReducer = (state=initialState, action) => {
             return {
                 loginPageDisplay: action.payload.loginPageDisplay
             }
+        case 'CHANGE_LOGIN_DISPLAY':
+            return {
+                loginPageDisplay: action.payload.loginPageDisplay
+            }
+        case 'USER_TO_CREATE_FROM_LOGIN':
+            return {
+                loginPageDisplay: action.payload.loginPageDisplay
+            }
         default:
             return state;
         }

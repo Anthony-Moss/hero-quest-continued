@@ -20,7 +20,18 @@ const mapDispatchToProps = (dispatch) => {
                 loginPageDisplay: 'none',
                 menuDisplay: 'flex'
             }})
+        },
+        loadCreateFromLogin: () => {
+            dispatch({ type: 'USER_TO_CREATE_FROM_LOGIN', payload: {
+                loginPageDisplay: 'none',
+                createUserPageDisplay: 'flex'
+            }})
         }
+        // loginPageDisplayOff: () => {
+        //     dispatch({ type: 'CHANGE_LOGIN_DISPLAY', payload: {
+        //         loginPageDisplay: 'none'
+        //     }})
+        // }
     }
 } 
 

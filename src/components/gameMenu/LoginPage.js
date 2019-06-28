@@ -43,6 +43,8 @@ class LoginPage extends React.Component {
                 <div className='TitleTextLP'>
                     <h1>Hero Quest</h1>
                     <h2>Enter your information below to login and play!</h2>
+                    <h2>Don't have an Account? Go to our create account page to create your account.</h2>
+        
                 </div>
                 <div className='loginPageForm'>
                     <form onSubmit={this.userLogin}>
@@ -60,7 +62,7 @@ class LoginPage extends React.Component {
                 <div className='LoginScreenButtons'>
                     {/* this will take the input fields info and test login, if successful goes to main gameMenu to load or start new */}
                     <button onClick={this.toGameMenuFromLogin}>Main Menu</button>
-                    <button onClick={this.createUserPage}>Create Account</button>
+                    <button onClick={this.toCreateUserPageFromLogin}>Create Account</button>
                 </div>
             </div>
         )
@@ -82,8 +84,8 @@ class LoginPage extends React.Component {
     userLogin = () => {
     }
     // this will turn off the login page and turn on the create user page
-    createUserPage = () => {
-
+    toCreateUserPageFromLogin = () => {
+        this.props.loadCreateFromLogin()
     }
 
     toGameMenuFromLogin = () => {

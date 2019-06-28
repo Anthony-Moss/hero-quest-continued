@@ -16,6 +16,14 @@ const createUserPageReducer = (state=initialState, action) => {
             return {
                 createUserPageDisplay: action.payload.createUserPageDisplay
             }
+        case 'CHANGE_CREATE_USER_DISPLAY':
+            return {
+                createUserPageDisplay: action.payload.createUserPageDisplay
+            }
+        case 'USER_TO_CREATE_FROM_LOGIN':
+            return {
+                createUserPageDisplay: action.payload.createUserPageDisplay
+            }
         default:
             return state;
         }

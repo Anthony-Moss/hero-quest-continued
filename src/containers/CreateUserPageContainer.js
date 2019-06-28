@@ -28,6 +28,11 @@ const mapDispatchToProps = (dispatch) => {
                 createUserPageDisplay: 'none',
                 loginPageDisplay: 'flex'
             }})
+        },
+        createUserPageOn: () => {
+            dispatch({ type: 'CHANGE_CREATE_USER_DISPLAY', payload: {
+                createUserPageDisplay: 'flex'
+            }})
         }
     }
 } 
