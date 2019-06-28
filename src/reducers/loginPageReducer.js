@@ -12,6 +12,10 @@ const loginPageReducer = (state=initialState, action) => {
             return {
                 loginPageDisplay: action.payload.loginPageDisplay
             }
+        case 'USER_TO_MAIN_MENU_FROM_LOGIN':
+            return {
+                loginPageDisplay: action.payload.loginPageDisplay
+            }
         default:
             return state;
         }

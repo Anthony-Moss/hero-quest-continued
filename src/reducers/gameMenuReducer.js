@@ -20,6 +20,10 @@ const gameMenuReducer = (state=initialState, action) => {
             return {
                 menuDisplay: action.payload.menuDisplay
             }
+        case 'USER_TO_MAIN_MENU_FROM_LOGIN':
+            return {
+                menuDisplay: action.payload.menuDisplay
+            }
         default:
             return state;
         }

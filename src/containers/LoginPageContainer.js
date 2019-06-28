@@ -14,6 +14,12 @@ const mapDispatchToProps = (dispatch) => {
                 menuDisplay: 'none',
                 loginPageDisplay: 'flex'
             }})
+        },
+        loadGameMenuFromLogin: () => {
+            dispatch({ type: 'USER_TO_MAIN_MENU_FROM_LOGIN', payload: {
+                loginPageDisplay: 'none',
+                menuDisplay: 'flex'
+            }})
         }
     }
 } 

@@ -86,6 +86,10 @@ class LoginPage extends React.Component {
 
     }
 
+    toGameMenuFromLogin = () => {
+        this.props.loadGameMenuFromLogin()
+    }
+
     // sendState = async () => {
     //     console.log('GameMenu sendState got called')
     //     await axios({
