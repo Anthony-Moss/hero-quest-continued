@@ -585,9 +585,9 @@ export default function PlayerMovement(player) {
 // Listens for Up, Down, Left, Right on KEYDOWN events based on keyCode
     
     function handleKeyDown(e) {
-        const isListening = store.getState().player.isListening
-        e.preventDefault()
-        if(isListening) {
+        const isListeningForMovement = store.getState().player.isListening
+        // e.preventDefault()
+        if(isListeningForMovement) {
         switch(e.keyCode) {
             case 37:
                 return attemptMove('WEST')
