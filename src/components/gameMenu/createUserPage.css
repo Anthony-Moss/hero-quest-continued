@@ -19,14 +19,15 @@ h2 {
     margin-top: 15px;
 }
 
-/* .GameMenu {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-} */
 
 .createUserForm {
+    text-align: center;
     flex-direction: column;
     color: white;
+}
+
+
+.CreateUserPageButtons {
+    text-align: center;
+    margin-top: 10px;
 }
