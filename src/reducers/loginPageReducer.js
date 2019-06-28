@@ -8,6 +8,10 @@ const loginPageReducer = (state=initialState, action) => {
             return {
                 loginPageDisplay: action.payload.loginPageDisplay
             }
+        case 'USER_WANTS_LOGIN_FROM_CREATE':
+            return {
+                loginPageDisplay: action.payload.loginPageDisplay
+            }
         default:
             return state;
         }

@@ -36,10 +36,10 @@ class GameMenu extends React.Component {
     }
 
     loginPage = () => {
-        this.props.loadLoginPage();
+        this.props.loadLoginPageFromMain();
     }
     createUserPage = () => {
-        this.props.loadCreateUserPage();
+        this.props.loadCreateUserPageFromMain();
     }
 }
 

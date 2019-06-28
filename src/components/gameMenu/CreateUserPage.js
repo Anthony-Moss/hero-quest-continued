@@ -50,6 +50,7 @@ class CreateUserPage extends React.Component {
                             <input type="submit" value="Create Account" />
                     </form>
                 </div>
+                    {/* these are navigation  buttons for menu */}
                 <div className='CreateUserPageButtons'>
                     {/* this will take the input fields info and test login, if successful goes to main gameMenu to load or start new */}
                     {/* <button onClick={this.createNewUser}>Create Account</button> */}
@@ -84,7 +85,7 @@ class CreateUserPage extends React.Component {
     // this will send user to the login page
     // this will turn off the createUserPageDisplay and turn on the loginPageDisplay
     toLoginPage = () => {
-        this.loadLoginPage()
+        this.props.loadLoginPageFromCreate()
     }
     // this will just go back to gameMenu main page
     // this will turn off this createUserPage display and

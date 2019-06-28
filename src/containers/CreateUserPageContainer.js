@@ -22,6 +22,12 @@ const mapDispatchToProps = (dispatch) => {
                 menuDisplay: 'flex',
                 createUserPageDisplay: 'none'
             }})
+        },
+        loadLoginPageFromCreate:() => {
+            dispatch({ type: 'USER_WANTS_LOGIN_FROM_CREATE', payload: {
+                createUserPageDisplay: 'none',
+                loginPageDisplay: 'flex'
+            }})
         }
     }
 } 

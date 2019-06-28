@@ -17,13 +17,13 @@ const mapDispatchToProps = (dispatch) => {
                 loginPageDisplay: 'none'
             }});
         },
-        loadLoginPage: () => {
+        loadLoginPageFromMain: () => {
             dispatch({ type: 'USER_WANTS_LOGIN_PAGE', payload: {
                 menuDisplay: 'none',
                 loginPageDisplay: 'flex'
             }})
         },
-        loadCreateUserPage: () => {
+        loadCreateUserPageFromMain: () => {
             dispatch({ type: 'USER_WANTS_CREATE_ACCOUNT_PAGE', payload: {
                 menuDisplay: 'none',
                 createUserPageDisplay:  'flex'
