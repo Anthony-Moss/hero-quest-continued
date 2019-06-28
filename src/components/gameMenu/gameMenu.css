@@ -8,6 +8,10 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-size: 28px;
+}
+
 .TitleText {
     margin-top: 130px;
     height: 100px;
