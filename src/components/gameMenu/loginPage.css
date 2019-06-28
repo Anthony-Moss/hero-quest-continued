@@ -1,0 +1,19 @@
+.TitleTextLP {
+    margin-top: 65px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.loginPageForm {
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.LoginPage {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
