@@ -7,7 +7,10 @@ import './createUserPage.css'
 class CreateUserPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            email: '',
+            password: ''
+        };
 
         this.handleChange = this.handleChange.bind(this);
         // this.handleSubmit = this.handleSubmit.bind(this);
@@ -64,22 +67,24 @@ class CreateUserPage extends React.Component {
     // this will create the user and add them to the DB
     // then if successfull will log them in and bring to menu
     createNewUser = async (event) => {
-            alert('A name was submitted: ' + this.state);
+            // alert('A name was submitted: ' + this.state);
             event.preventDefault();
             const response = await Axios({
                 method: 'post',
-                url: '/createUser',
+                url: 'http://localhost:5000/heroQuest',
                 data: qs.stringify(this.state),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             });
+            console.log(this.state)
             console.log(response.data);
+
         }
     
     // this handles updating the text input of the createUser text inputs
     handleChange = (event) => {
-        this.setState({[event.target.name]: event.target.value});
+        this.setState({[event.target.name]: [event.target.value]});
     }
 
     // this will send user to the login page
