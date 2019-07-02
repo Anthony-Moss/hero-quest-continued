@@ -9,7 +9,10 @@ class CreateUserPage extends React.Component {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            firstName: '',
+            lastName: '',
+            userName: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -80,18 +83,19 @@ class CreateUserPage extends React.Component {
     // then if successfull will log them in and bring to menu
     createNewUser = async (event) => {
             // alert('A name was submitted: ' + this.state);
-            event.preventDefault();
+            // event.preventDefault();
             const response = await Axios({
                 method: 'post',
-                url: 'http://localhost:5000/heroQuest/login',
+                url: 'http://localhost:5000/login',
                 data: qs.stringify(this.state),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
-            });
+            })
+            .then(
+                console.log(response.data)
+            )
             console.log(this.state)
-            console.log(response.data);
-
         }
     
     // this handles updating the text input of the createUser text inputs
