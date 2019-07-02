@@ -81,7 +81,21 @@ class LoginPage extends React.Component {
     // or if its easier when login we store that data in variable and then on loadGame that data is just used
     // to use the data we just dispatch action that updates state of everything we need (player stats, monster stats etc)
     // 
-    userLogin = () => {
+    testUserLogin = async (event) => {
+            // alert('A name was submitted: ' + this.state);
+            // event.preventDefault();
+            const response = await Axios({
+                method: 'post',
+                url: 'http://localhost:5000/login',
+                data: qs.stringify(this.state),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(
+                console.log(response.data)
+            )
+            console.log(this.state)
     }
     // this will turn off the login page and turn on the create user page
     toCreateUserPageFromLogin = () => {
