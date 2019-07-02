@@ -43,6 +43,18 @@ class CreateUserPage extends React.Component {
                 <div className='createUserForm'>
                     <form onSubmit={this.createNewUser}>
                         <label>
+                            First Name:
+                            <input name="firstName" type="text" value={this.state.firstName} onChange={this.handleChange} />
+                        </label>
+                        <label>
+                            Last Name:
+                            <input name="lastName" type="text" value={this.state.lastName} onChange={this.handleChange} />
+                        </label>
+                        <label>
+                            Username:
+                            <input name="userName" type="text" value={this.state.userName} onChange={this.handleChange} />
+                        </label>
+                        <label>
                             Email:
                             <input name="email" type="text" value={this.state.email} onChange={this.handleChange} />
                         </label>
@@ -71,7 +83,7 @@ class CreateUserPage extends React.Component {
             event.preventDefault();
             const response = await Axios({
                 method: 'post',
-                url: 'http://localhost:5000/heroQuest',
+                url: 'http://localhost:5000/heroQuest/login',
                 data: qs.stringify(this.state),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
