@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 import qs from 'qs'
 import gameMenuBackground from '../../styles/backgroundImages/AH-Space copy.png'
 import './loginPage.css'
@@ -8,12 +8,11 @@ class LoginPage extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     character: {},
-        //     messages: [],
-        //     text: ''
-        // }
-        this.state = {}
+        this.state = {
+            character: {},
+            messages: [],
+            text: ''
+        }
         this.handleTextInputChange = this.handleTextInputChange.bind(this);
     }
 
@@ -47,7 +46,7 @@ class LoginPage extends React.Component {
         
                 </div>
                 <div className='loginPageForm'>
-                    <form onSubmit={this.userLogin}>
+                    <form onSubmit={this.testUserLogin}>
                         <label>
                             Email:
                             <input name="email" type="text" value={this.state.email} onChange={this.handleTextInputChange} />
@@ -72,30 +71,18 @@ class LoginPage extends React.Component {
     handleTextInputChange = (event) => {
         this.setState({[event.target.name]: event.target.value});
     }
-    // this will call functions needed to dispatch actions associated with logging in
-    // will make sure user is logging in (has correct username pw, user existss etc)
-    // pulls either all users saved games, or just one to start (most recent)
-    // loads up the gameMenu and turns off login page
-    // if user pressed newGame - newGame starts
-    // if user presses loadGame - data from the login is used to call (select gamedata from  users where id = id)
-    // or if its easier when login we store that data in variable and then on loadGame that data is just used
-    // to use the data we just dispatch action that updates state of everything we need (player stats, monster stats etc)
+
     // 
-    testUserLogin = async (event) => {
-            // alert('A name was submitted: ' + this.state);
-            // event.preventDefault();
+    testUserLogin = async () => {
             const response = await Axios({
-                method: 'post',
+                method: 'POST',
                 url: 'http://localhost:5000/login',
                 data: qs.stringify(this.state),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             })
-            .then(
-                console.log(response.data)
-            )
-            console.log(this.state)
+        console.log(response)
     }
     // this will turn off the login page and turn on the create user page
     toCreateUserPageFromLogin = () => {
