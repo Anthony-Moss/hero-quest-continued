@@ -84,18 +84,20 @@ class CreateUserPage extends React.Component {
     createNewUser = async (event) => {
             // alert('A name was submitted: ' + this.state);
             // event.preventDefault();
+            try  {
+
             const response = await Axios({
-                method: 'post',
+                method: 'POST',
                 url: 'http://localhost:5000/login',
                 data: qs.stringify(this.state),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             })
-            .then(
-                console.log(response.data)
-            )
-            console.log(this.state)
+            console.log(response);
+            } catch (error) {
+                console.log(error);
+            }
         }
     
     // this handles updating the text input of the createUser text inputs

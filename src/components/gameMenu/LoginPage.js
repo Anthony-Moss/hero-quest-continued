@@ -9,9 +9,7 @@ class LoginPage extends React.Component {
         super(props);
 
         this.state = {
-            character: {},
-            messages: [],
-            text: ''
+            // messsage: ''
         }
         this.handleTextInputChange = this.handleTextInputChange.bind(this);
     }
@@ -74,6 +72,7 @@ class LoginPage extends React.Component {
 
     // 
     testUserLogin = async () => {
+        try {
             const response = await Axios({
                 method: 'POST',
                 url: 'http://localhost:5000/login',
@@ -82,7 +81,10 @@ class LoginPage extends React.Component {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             })
-        console.log(response)
+            console.log(response.data)
+        } catch (error) {
+            console.log(error)
+        }
     }
     // this will turn off the login page and turn on the create user page
     toCreateUserPageFromLogin = () => {
